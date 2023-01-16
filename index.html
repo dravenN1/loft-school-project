@@ -9,14 +9,15 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <a href="/" class="logo">
                 <img src="" alt="" class="logo__pic">
             </a>
-            <ul class="header__menu">
-                <li class="header__menu-item">Главная</li>
-                <li class="header__menu-item">Услуги</li>
-                <li class="header__menu-item">Отзывы</li>
-            </ul>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#">Главная</a></li>
+                   <li class="menu__item">Услуги</li>
+                   <li class="menu__item">Отзывы</li>
+                </ul>
+            </nav>
             <address class="contacts">
                 <a href="tel:+78000039210" class="contacts__phone">8 (800)700 30 30</a>
                 <div class="contacts__workhours">График работы</div>
@@ -29,7 +30,7 @@
                 <div class="maintext">
                     <h1 class="maintext__header">Авторские туры по Азии</h1>
                     <p class="maintext__header-addition">Открой для себя Азию</p>
-                    <input type="button" name="Подробнее" value="Подробнее">
+                    <input class="maintext__header-button" type="button" name="Подробнее" value="Подробнее">
                 </div>
                 <div class="tours">
                     <div class="tours__header">
@@ -102,14 +103,15 @@
                 </div>
                 <div class="info">
                     <img src="#" alt="" class="info__mountains">
-                    <img src="" alt="" class="info__gates">
-                    <h3 class="info__header">О нас</h3>
-                    <p class="info__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. </p>
-                    <input type="button" name="Подробнее" value="Подробнее">
+                    <div class="info">
+                        <img src="" alt="" class="info__gates">
+                        <h3 class="info__header">О нас</h3>
+                        <p class="info__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. </p>
+                        <input type="button" name="Подробнее" value="Подробнее">
+                   </div>
                 </div>
             </main>
-            <aside class="sidebar">
-                <a href="/" class="sidebar__logo">
+            <footer class="sidebar">
                     <img src="" alt="" class="logo__pic">
                 <nav class="sidebar__menu">
                     <ul class="sidebar__menu-list">
@@ -140,7 +142,7 @@
                     <p class="sidebar__freecall">Бесплатный звонок по России</p>
                     <p class="sidebar__contacts">8 800 700 30 30</p>
                 </nav>
-            </aside>
+            </footer>
         </div>
     </div>
 </body>
