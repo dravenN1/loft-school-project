@@ -13,7 +13,7 @@ body {
 .wrapper {
     height: 100%;
     width: 100%;
-    background-image: url(/loft-school-project/background.png);
+    background-image: url(/loft-school-project/bg.png);
     background-repeat: no-repeat;
 }
 ul {
