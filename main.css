@@ -42,12 +42,9 @@ a {
 }
 .menu {
     top: 42px;
-    margin-left: 79px;
+    left: 164px
 }
-.menu__list {
-    top: 42px;
-    margin-left: 79px;
-}
+
 .menu__item {
     display: inline-block;
     margin-right: 54px;
@@ -62,7 +59,7 @@ a {
     line-height: 19px;
 }
 .contacts {
-    right: 0;
+    right: 0px;
     top: 20px;
 }
 .contacts__phone {
@@ -112,7 +109,6 @@ a {
     font-size: 72px;
     line-height: 98px;
     width: 511px;
-    height: 197px;
 }
 .main__text{
     font-weight: 400;
@@ -135,8 +131,10 @@ a {
     background: #9b1e1a;
     transition:  .4s;
 }
-.tours__header {
+.tours {
     margin-top: 246px;
+}
+.tours__header {
     margin-bottom: 59px;
 }
 .tours__header-img {
@@ -160,8 +158,11 @@ a {
 .tours__icon {
     width: 357px;
 }
+.tours__context {
+    margin-left: 25px;
+    margin-right: 16px;
+}
 .tours__context-header {
-    margin-left: 22px;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -169,7 +170,6 @@ a {
 
 }
 .tours__context-info {
-    margin-left: 26px;
     text-align: center;
     font-weight: 400;
     font-size: 16px;
@@ -193,17 +193,16 @@ a {
     display: inline-block;
 }
 .tours__context-img {
+    margin-right: 9px;
     display: inline-block;
-    margin-left: 27px;
     width: 36px;
     height: 26px;
-    margin-right: 9px;
+    margin-left: 28px;
 }
 .tours__context-text {
     display: inline-block;
 }
 .tours__context-texting {
-    margin-left: 22px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -244,8 +243,10 @@ a {
     background: #F5170E;
     color: #fff;
 }
-.sales__header {
+.sales {
     margin-top: 127px;
+}
+.sales__header {
     margin-bottom: 51px;
     font-style: normal;
     font-weight: 700;
@@ -264,24 +265,26 @@ a {
 }
 .sales__img {
     position: absolute;
-    
 }
 .sales__content {
     position: absolute;
     bottom: 47px;
     left: 31px;
+    top: 252px;
 }
 .news__date-month,.news__date-year {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 12px;
 }
 .sale__item-announcement {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 3px;
 }
 .sale__text {
     font-style: normal;
@@ -318,10 +321,10 @@ a {
     color: #F5170E;
 }
 
-.paginator__item {
-    margin-right: 24px;
+.paginator__link {
+    margin-right: 3px;
 }
-.paginator__item:last-child {
+.paginator__link:last-child {
     margin-right: 0px;
 }
 .paginator__item--active .paginator__link {
@@ -331,6 +334,7 @@ a {
 .info__img {
     display: inline-block;
     vertical-align: top;
+    position: relative;
 }
 .info__content {
     display: inline-block;
@@ -348,8 +352,8 @@ a {
 .info__content-text {
     position: absolute;
     width: 502px;
-    margin-left: 81px;
-    margin-top: 71px;;
+    left: 821px;
+    top: 245%;
 }
 .info__content-header {
     margin: 0px;
@@ -366,13 +370,7 @@ a {
     color: #060606;
     margin-bottom: 61px;
 }
-.line {
-    margin-top: 100px;
-    height: 4px;
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.1;
-}
+
 
 
 
@@ -380,30 +378,35 @@ a {
 
 .footer {
     position: relative;
+    border-top: 1px solid rgba(255, 255, 255, .1);;
+    margin-top: 100px;
+}
+.footer:bord {
+    opacity: 0.1;
 }
 .logo, .menu , .contacts, .socials {
     position: absolute;
 }
 .footer .menu {
-    margin-top: 40px;
-    margin-bottom: 50px;
+    left: 164px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+    top: 39px;
+    bottom: 68px;
 }
 .footer .logo {
-    margin-top: 45px;
-    margin-bottom: 50px;
+    top: 30px;
+    bottom: 68px;
 }
 
 .socials {
-    top: 18px;
+    top: 30px;
     left: 672px;
     display: inline-block;
-    margin-top: 45px;
     margin-right: 75px;
-    margin-bottom: 50px;
+    bottom: 68px;
 }
 
 .socials__list-item {
@@ -416,7 +419,9 @@ a {
     line-height: 20px;
     color: #9A9A9A;
     font-style: normal;
+    text-decoration: none;
 }
 .footer .contacts__phone {
     font-style: normal;
+    bottom: 57px;
 }
