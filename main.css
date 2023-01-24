@@ -9,6 +9,7 @@ body {
     width: 100%;
     background: #001821;
     color: #fff;
+    overflow-x: hidden;
 }
 .wrapper {
     height: 100%;
@@ -350,10 +351,9 @@ a {
     height: 455px;
 }
 .info__content-text {
-    position: absolute;
-    width: 502px;
-    left: 821px;
-    top: 245%;
+    position: relative;
+    padding-left: 81px;
+    padding-top: 71px;
 }
 .info__content-header {
     margin: 0px;
@@ -412,6 +412,9 @@ a {
 .socials__list-item {
     display:inline-block;
     margin-right: 10px;
+}
+.socials__list-item:last-child {
+    margin-right: 0px;
 }
 .footer .contacts__dropdown-title {
     font-weight: 400;
