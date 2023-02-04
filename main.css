@@ -64,9 +64,12 @@ img {
 .logo {
     margin-right: 100px;
 }
+.menu__list {
+    display: flex;
 
+}
 .menu__item {
-    display: inline-block;
+    display: flex;
     margin-right: 54px;
     text-decoration: none;
 }
@@ -78,8 +81,7 @@ img {
     font-size: 14px;
     line-height: 19px;
 }
-.contacts {
-}
+
 .contacts__phone {
     font-weight: 400;
     font-size: 26px;
@@ -133,13 +135,21 @@ img {
     margin-top: 246px;  
 }
 .tours__header {
+    display: flex;
     margin-bottom: 59px;
+    width: 215px;
+    justify-content: space-between;
+    align-items: center;
+}
+.tours__header-title {
+    display: flex;
 }
 .tours__header-img {
+    display: flex;
     width: 21px;
     height: 28px;
-    margin-left: 10px;
     margin-bottom: -3px;
+    margin-left: 12px;
 }
 .tours__list {
     display: flex;
@@ -254,8 +264,14 @@ img {
     font-size: 36px;
     line-height: 49px;
 }
+
+.sales__list {
+    display: flex;
+}
 .sales__item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 555px;
     height: 394px;
     position: relative;
@@ -415,13 +431,15 @@ img {
 .socials {
     top: 30px;
     left: 672px;
-    display: inline-block;
+    display: flex;
     margin-right: 75px;
     bottom: 68px;
+    align-items: center;
+    justify-content: center;
 }
 
 .socials__item {
-    display:inline-block;
+    display:flex;
     margin-right: 10px;
 }
 .socials__item:last-child {
@@ -466,9 +484,7 @@ img {
 
 .page-title {
     font-size: 72px;
-    line-height: 0;
     font-weight: bold;
-
 }
 
 .breadcrumbs__list {
@@ -515,6 +531,10 @@ img {
 .service {
     display: flex;
     margin-bottom: 50px;
+}
+
+.service:last-child {
+    margin-bottom: 0px;
 }
 
 .service__img {
@@ -600,6 +620,7 @@ img {
 .partners {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 .partners__link {
     text-decoration: none;
@@ -616,7 +637,18 @@ img {
 .partners__item:nth-child(4n + 1){
     margin-left: 0px;
 }
-
+.partners__item:nth-child(5){
+    margin-bottom: 0px;
+}
+.partners__item:nth-child(6){
+    margin-bottom: 0px;
+}
+.partners__item:nth-child(7){
+    margin-bottom: 0px;
+}
+.partners__item:nth-child(8){
+    margin-bottom: 0px;
+}
 .inner-section--bg--grey {
     background: #F4F5F5;
 }
