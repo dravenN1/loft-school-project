@@ -66,7 +66,6 @@ img {
 }
 .menu__list {
     display: flex;
-
 }
 .menu__item {
     display: flex;
@@ -80,6 +79,10 @@ img {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+}
+
+.menu__link--active {
+    color: #F5170E
 }
 
 .contacts__phone {
@@ -102,9 +105,14 @@ img {
 .contacts__dropdown {
     position: relative;
 }
-.contacts__dropdown:hover .contacts__menu {
+.contacts__dropdown:hover .contacts__menu{
     display: block;
-    transition: .4s;
+    transition: opacity .4s;
+}
+
+.contacts__dropdown:hover .contacts__menu--triangle{
+    display: block;
+    transition: opacity .4s;
 }
 
 .contacts__menu {
@@ -114,6 +122,24 @@ img {
     padding: 15px 19px 15px;
     opacity: 0.8;
     display: none;
+    right: 0;
+    margin-top: 7px;
+}
+.contacts__menu--triangle{
+    content: "";
+    width: 0%;
+    height: 0%;
+    display: none;
+    left: 0;
+    right: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid #EDEDED;
+    background: transparent;
+    margin-left: 142px;
+    opacity: 0.8;
+    position: absolute;
+    bottom: -7px;
 }
 .contacts__item {
     text-decoration: none;
@@ -468,15 +494,71 @@ img {
     bottom: 68px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
-
 .socials__item {
     display:flex;
-    margin-right: 10px;
+    margin-right: 45px;
 }
 .socials__item:last-child {
     margin-right: 0px;
 }
+
+.socials__link--telegram {
+    display:flex;
+    position: relative;
+}
+
+.socials__link--telegram:after  {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 36px; height: 36px;
+    background: url('icons-sprite.png') -66px -10px;
+}
+
+.socials__link--vk {
+    display:flex;
+    position: relative;
+}
+
+.socials__link--vk:after  {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 36px; height: 36px;
+    background: url('icons-sprite.png') -122px -10px;
+}
+
+.socials__link--facebook {
+    display:flex;
+    position: relative;
+}
+
+.socials__link--facebook:after  {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 36px; height: 36px;
+    background: url('icons-sprite.png') -10px -10px;
+}
+
+.socials__link--instagram {
+    display:flex;
+    position: relative;
+}
+
+.socials__link--instagram:after  {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 36px; height: 36px;
+    background: url('icons-sprite.png') -178px -10px;
+}
+
+
+
+
 
 .footer .contacts__dropdown-title {
     font-weight: 400;
@@ -536,6 +618,10 @@ img {
     display: flex;
     align-items: center;
     margin-right: 3px;
+}
+
+.breadcrumbs__item:last-child {
+    margin-right: 0px;
 }
 
 .breadcrumbs__item:after {
@@ -857,11 +943,10 @@ img {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -9px;
+    margin-right: -7px;
 }
-.controls__item {
-    margin-bottom: 9px;
-    margin-right: 7px;
-}
+
 .controls__elem {
     cursor: pointer;
 }
