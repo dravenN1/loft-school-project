@@ -105,15 +105,31 @@ img {
 .contacts__dropdown {
     position: relative;
 }
-.contacts__dropdown:hover .contacts__menu{
+.contacts__dropdown:hover .contacts__menu {
     display: block;
-    transition: opacity .4s;
+    animation: showup .5s linear forwards    
+    /* animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
 }
 
 .contacts__dropdown:hover .contacts__menu--triangle{
     display: block;
-    transition: opacity .4s;
+    animation: showup .5s linear forwards
+    /* animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+
 }
+@keyframes showup {
+    from {opacity: 0;}
+    to {opacity: 0.8;}
+}@keyframes showdown {
+    from {opacity: 0.8;}
+    to {opacity: 0;}
+}
+
+
 
 .contacts__menu {
     position: absolute;
@@ -139,8 +155,9 @@ img {
     margin-left: 142px;
     opacity: 0.8;
     position: absolute;
-    bottom: -7px;
+    bottom: -7px;    
 }
+
 .contacts__item {
     text-decoration: none;
     color: #1E1F20;
