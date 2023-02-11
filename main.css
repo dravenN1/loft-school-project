@@ -106,7 +106,7 @@ img {
     position: relative;
 }
 .contacts__dropdown:hover .contacts__menu {
-    display: block;
+    visibility: visible;
     animation: showup .5s linear forwards    
     /* animation-timing-function: linear;
     animation-duration: 1s;
@@ -114,7 +114,7 @@ img {
 }
 
 .contacts__dropdown:hover .contacts__menu--triangle{
-    display: block;
+    visibility: visible;
     animation: showup .5s linear forwards
     /* animation-timing-function: linear;
     animation-duration: 1s;
@@ -137,15 +137,18 @@ img {
     border-radius: 5px;
     padding: 15px 19px 15px;
     opacity: 0.8;
-    display: none;
+    display: inline-block;
     right: 0;
     margin-top: 7px;
+    visibility: hidden;
+    transition: visibility .5s;
+    animation: showdown .5s linear forwards;
 }
 .contacts__menu--triangle{
     content: "";
     width: 0%;
     height: 0%;
-    display: none;
+    display: inline-block;
     left: 0;
     right: 0;
     border-left: 10px solid transparent;
@@ -155,7 +158,10 @@ img {
     margin-left: 142px;
     opacity: 0.8;
     position: absolute;
-    bottom: -7px;    
+    bottom: -7px;
+    visibility: hidden;  
+    transition: visibility .5s; 
+    animation: showdown .5s linear forwards;
 }
 
 .contacts__item {
